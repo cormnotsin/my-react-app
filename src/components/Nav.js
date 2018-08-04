@@ -1,17 +1,17 @@
-import React, { Component } from 'react';
-import './Nav.css';
+import React from 'react';
+//import './Nav.css';
+import {
+    Link,
+  }from 'react-router-dom';
 
-class Nav extends Component {
-  render() {
+export default function Nav()  {
     return (
-      <div class='Navigation'>
-          <button>Home</button>
-          <button>About</button>
-          <button>Book Now</button>
-          <button>Contact Us</button>
+      <div>
+          <button><Link to ='/'>Home</Link></button>
+          <button><Link to ='/about'>About</Link></button>
+          <button><Link to ='/booknow'>Book Now!</Link></button>
+          <button><Link to ='/contactus'>Contact Us</Link></button>
       </div>
     );
-  }
 }
 
-export default Nav;

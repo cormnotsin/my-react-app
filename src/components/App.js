@@ -14,8 +14,8 @@ import {
 class App extends Component {
   render() {
     return (
-      <BrowserRouter>
-        <div>
+      <BrowserRouter >
+        <div className='App-background'>
           <Nav /> 
           <hr/>
           <Route exact path='/' component={Home}/>

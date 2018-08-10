@@ -15,9 +15,8 @@ class App extends Component {
   render() {
     return (
       <BrowserRouter >
-        <div className='App-background'>
+        <div id='page-wrap'>
           <Nav /> 
-          <hr/>
           <Route exact path='/' component={Home}/>
           <Route path='/booknow' component={BookNow}/>
           <Route path='/contactus' component={ContactUs}/>

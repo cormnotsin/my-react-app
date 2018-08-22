@@ -13,6 +13,7 @@ export default function Nav()  {
           <Link to ='/about'><button className='button'>About</button></Link>
           <Link to ='/booknow'><button className='button'>Book Now!</button></Link>
           <Link to ='/contactus'><button className='button'>Contact Us</button></Link>
+          <Link to ='/gallery'><button className='button'>Gallery</button></Link>
       </div>
     );
 }

@@ -18,11 +18,13 @@ class App extends Component {
       <BrowserRouter >
         <div id='page-wrap'>
           <Nav /> 
-          <Route exact path='/' component={Home}/>
-          <Route path='/booknow' component={BookNow}/>
-          <Route path='/contactus' component={ContactUs}/>
-          <Route path='/about' component={About}/>
-          <Route path='/gallery' component={Gallery}/>
+          <Switch>
+              <Route exact path='/' component={Home}/>
+              <Route path='/booknow' component={BookNow}/>
+              <Route path='/contactus' component={ContactUs}/>
+              <Route path='/about' component={About}/>
+              <Route path='/gallery' component={Gallery}/>
+          </Switch>
         </div>
       </BrowserRouter>
     );

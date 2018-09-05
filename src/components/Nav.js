@@ -14,6 +14,7 @@ export default function Nav()  {
           <Link to ='/booknow'><button className='button'>Book Now!</button></Link>
           <Link to ='/contactus'><button className='button'>Contact Us</button></Link>
           <Link to ='/gallery'><button className='button'>Gallery</button></Link>
+          <Link to ='/services'><button className='button'>Services</button></Link>
       </div>
     );
 }

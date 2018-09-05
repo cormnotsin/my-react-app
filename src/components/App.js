@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import '../style/App.css';
-import Nav from './Nav.js';
-import Home from './Home.js';
-import BookNow from './BookNow.js';
-import ContactUs from './ContactUs.js';
-import About from './About.js';
-import Gallery from './Gallery.js';
+import Nav from './Nav';
+import Home from './Home';
+import BookNow from './BookNow';
+import ContactUs from './ContactUs';
+import About from './About';
+import PhotoGallery from './PhotoGallery';
+import Services from './Services';
 import {
   BrowserRouter,
   Route,
@@ -22,7 +23,8 @@ class App extends Component {
           <Route path='/booknow' component={BookNow}/>
           <Route path='/contactus' component={ContactUs}/>
           <Route path='/about' component={About}/>
-          <Route path='/gallery' component={Gallery}/>
+          <Route path='/gallery' component={PhotoGallery}/>
+          <Route path='/services' component={Services}/>
         </div>
       </BrowserRouter>
     );

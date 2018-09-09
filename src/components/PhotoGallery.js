@@ -48,7 +48,7 @@ class PhotoGallery extends React.Component {
         });
       }
 }
-export default function About(){
+export default function PhotoGallery(){
     return       
     <div>
         <Gallery photos={photos} onClick={this.openLightbox} />

@@ -11,7 +11,6 @@ import {
   BrowserRouter,
   Route,
   Link,
-  Switch,
 }from 'react-router-dom';
 
 class App extends Component {
@@ -20,13 +19,11 @@ class App extends Component {
       <BrowserRouter >
         <div id='page-wrap'>
           <Nav /> 
-          <Switch>
               <Route exact path='/' component={Home}/>
               <Route path='/booknow' component={BookNow}/>
               <Route path='/contactus' component={ContactUs}/>
               <Route path='/about' component={About}/>
               <Route path='/gallery' component={PhotoGallery}/>
-          </Switch>
         </div>
       </BrowserRouter>
     );

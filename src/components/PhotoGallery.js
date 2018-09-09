@@ -47,17 +47,21 @@ class PhotoGallery extends React.Component {
           currentImage: this.state.currentImage + 1,
         });
       }
+
+      render() {
+        return (
+          <div>
+            <Gallery photos={photos} onClick={this.openLightbox} />
+            <Lightbox images={photos}
+              onClose={this.closeLightbox}
+              onClickPrev={this.gotoPrevious}
+              onClickNext={this.gotoNext}
+              currentImage={this.state.currentImage}
+              isOpen={this.state.lightboxIsOpen}
+            />
+          </div>
+        )
+      }
 }
-export default function PhotoGallery(){
-    return       
-    <div>
-        <Gallery photos={photos} onClick={this.openLightbox} />
-        <Lightbox images={photos}
-        onClose={this.closeLightbox}
-        onClickPrev={this.gotoPrevious}
-        onClickNext={this.gotoNext}
-        currentImage={this.state.currentImage}
-        isOpen={this.state.lightboxIsOpen}
-        />
-    </div>
-}
+export default PhotoGallery
+

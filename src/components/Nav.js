@@ -11,7 +11,7 @@ export default function Nav()  {
           <p>Olivia Grace Photography</p>
           <Link to ='/'><button className='button'>Home</button></Link>
           <Link to ='/about'><button className='button'>About</button></Link>
-          <Link to ='/booknow'><button className='button'>Book Now!</button></Link>
+          <Link to ='/booknow'><button className='button'>Schedule</button></Link>
           <Link to ='/contactus'><button className='button'>Contact Us</button></Link>
           <Link to ='/gallery'><button className='button'>Gallery</button></Link>
           <Link to ='/services'><button className='button'>Services</button></Link>

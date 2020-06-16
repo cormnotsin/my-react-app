@@ -1,17 +1,26 @@
 import React from 'react'
 import Gallery from 'react-photo-gallery'
 import Lightbox from 'react-images'
+import gallery1 from '../img/motherdaughter19.JPG';
+import gallery2 from '../img/retake10.JPG';
+import gallery3 from '../img/senioreditredo1.JPG';
+import gallery4 from '../img/sublett14.JPG';
+import gallery5 from '../img/flakeedit8bw.JPG';
+import gallery6 from '../img/aero7.JPG';
+import gallery7 from '../img/ari10.JPG';
+import gallery8 from '../img/wheet13.JPG';
+import gallery9 from '../img/butler21.JPG';
 
 const photos = [
-    { src: 'https://source.unsplash.com/2ShvY8Lf6l0/800x599', width: 4, height: 3 },
-    { src: 'https://source.unsplash.com/Dm-qxdynoEc/800x799', width: 1, height: 1 },
-    { src: 'https://source.unsplash.com/qDkso9nvCg0/600x799', width: 3, height: 4 },
-    { src: 'https://source.unsplash.com/iecJiKe_RNg/600x799', width: 3, height: 4 },
-    { src: 'https://source.unsplash.com/epcsn8Ed8kY/600x799', width: 3, height: 4 },
-    { src: 'https://source.unsplash.com/NQSWvyVRIJk/800x599', width: 4, height: 3 },
-    { src: 'https://source.unsplash.com/zh7GEuORbUw/600x799', width: 3, height: 4 },
-    { src: 'https://source.unsplash.com/PpOHJezOalU/800x599', width: 4, height: 3 },
-    { src: 'https://source.unsplash.com/I1ASdgphUH4/800x599', width: 4, height: 3 }
+    { src: gallery1, width: 4, height: 3 },
+    { src: gallery2, width: 2, height: 3 },
+    { src: gallery3, width: 6, height: 4 },
+    { src: gallery4, width: 6, height: 4 },
+    { src: gallery5, width: 6, height: 4 },
+    { src: gallery6, width: 4, height: 3 },
+    { src: gallery7, width: 4, height: 6 },
+    { src: gallery8, width: 4.5, height: 3 },
+    { src: gallery9, width: 4, height: 6 }
   ]
 
 

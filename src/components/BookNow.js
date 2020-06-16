@@ -1,22 +1,38 @@
 import React from 'react'
-import Iframe from 'react-iframe'
-import ApiCalendar from 'react-google-calendar-api';
+import 'react-big-calendar/lib/css/react-big-calendar.css';
+import { Calendar, momentLocalizer } from 'react-big-calendar';
+import moment from 'moment';
 
-// export default function BookNow(){
-//     return <div>
-//             <Iframe url="https://calendar.google.com/calendar/embed?src=corm1337%40gmail.com&ctz=America%2FLos_Angeles" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"/>
-//             </div>
-// }
+const localizer = momentLocalizer(moment)
+const myEventsList = [{ 
+  'title': 'All Day Event very long title',
+  'allDay': true,
+  'start': new Date(2020, 6, 0),
+  'end': new Date(2020, 6, 1)
+},
+{
+  'title': 'Long Event',
+  'start': new Date(2020, 6, 7),
+  'end': new Date(2020, 6, 10)
+}]
+
 
 class BookNow extends React.Component {
     constructor() {
         super();
       }
+ 
+
       render() {
         return (
           <div>
-              Book Now!
-          </div>
+          <Calendar
+          localizer={localizer}
+          events={myEventsList}
+          startAccessor="start"
+          endAccessor="end"
+        />
+        </div>
         )
       }
 }

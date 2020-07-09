@@ -35,7 +35,7 @@ export default function ContactUs({ match }) {
                 ))}
             </ul>
             <hr />
-            <Route path={'${match.url}/${id}'} component={Facebook}/>
+            <Route path={'${match.url}/facebook'} component={Facebook}/>
         </div>
     )
 }

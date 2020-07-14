@@ -1,7 +1,4 @@
 import React from 'react'
-import Facebook from './Facebook';
-import Instagram from './Instagram';
-import Email from './Email';
 import {
     Link,
     Route,
@@ -35,7 +32,7 @@ export default function ContactUs({ match }) {
                 ))}
             </ul>
             <hr />
-            <Route path={'${match.url}/facebook'} component={Facebook}/>
+            
         </div>
     )
 }

@@ -7,6 +7,9 @@ import ContactUs from './ContactUs';
 import About from './About';
 import PhotoGallery from './PhotoGallery';
 import Services from './Services';
+import Facebook from './Facebook';
+import Instagram from './Instagram';
+import Email from './Email';
 import {
   BrowserRouter,
   Route,
@@ -22,6 +25,9 @@ class App extends Component {
               <Route exact path='/' component={Home}/>
               <Route path='/booknow' component={BookNow}/>
               <Route path='/contactus' component={ContactUs}/>
+              <Route path='/contactus/facebook' component={Facebook}/>
+              <Route path='/contactus/instagram' component={Instagram}/>
+              <Route path='/contactus/email' component={Email}/>
               <Route path='/about' component={About}/>
               <Route path='/gallery' component={PhotoGallery}/>
               <Route path='/services' component={Services}/>

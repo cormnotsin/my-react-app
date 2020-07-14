@@ -1,5 +1,5 @@
 import React from 'react'
 
-export default function Facebook(){
-    return <div>Made it to Instagram Component!</div>
+export default function Instagram(){
+    return <div key="instagram">Made it to Instagram Component!</div>
 }
